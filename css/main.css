@@ -79,20 +79,24 @@ header .logo img {
     height: auto;
 }
 
-header nav {
+nav {
     font-family: 'Courier New', monospace;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
     margin-top: 16px;
     padding: 0;
 }
 
-header nav li:not(:last-child)::after {
+nav li:not(:last-child)::after {
     content: " • ";
     margin-right: 5px;
+}
+
+footer nav ul {
+    margin-bottom: 0px;
 }
 
 footer {
@@ -115,14 +119,21 @@ footer {
         padding: 24px 24px;
     }
 
-    header nav ul {
+    footer {
+        padding-top: 20px;
+    }
+
+    nav ul {
         list-style: disc;
         display: block;
         margin-top: 0px;
+    }
+    
+    header nav ul {
         padding: 0px;
     }
 
-    header nav li:not(:last-child)::after {
+    nav li:not(:last-child)::after {
         content: none;
         margin-right: 0px;
     }
