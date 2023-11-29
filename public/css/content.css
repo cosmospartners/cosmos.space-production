@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background-color: #f9fbfd;
+    padding: 64px 32px;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.document {
+    min-height: 1000px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 48px 64px;
+    border: 1px solid #c7c7c7;
+}
+
+table.values {
+    border-collapse: collapse;
+}
+
+table.values th, table.values td {
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+table.values thead tr,
+table.values tbody tr:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+table.values th:first-child, table.values td:first-child {
+    border-right: 1px solid black;
+}
+
+table.workflow-optimization-phases {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+table.workflow-optimization-phases th {
+    text-align: left;
+    vertical-align: top;
+}
+
+table.workflow-optimization-phases th .phase-name {
+    font-size: 1.2em;
+}
+
+table.workflow-optimization-phases th .phase-duration {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 450px) {
+    .background {
+        padding: 64px 12px;
+    }
+
+    .document {
+        padding: 48px 32px;
+    }
+
+    table.workflow-optimization-phases {
+        margin-left: 0px;
+    }
+
+    table.values {
+        margin-right: 32px;
+    }
+
+    table.values thead {
+        display: none;
+    }
+
+    table.values thead tr,
+    table.values tbody tr:not(:last-child) {
+        border-bottom: none;
+    }
+
+    table.values td:first-child {
+        font-weight: bold;
+        border: none;
+    }
+
+    table.values td,
+    table.workflow-optimization-phases th,
+    table.workflow-optimization-phases td {
+        display: block;
+        width: 100%;
+    }
+
+    table.values td:not(:last-child) {
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    table.workflow-optimization-phases tr:not(:last-child) td {
+        border-bottom: 1px solid #c7c7c7;
+        margin-bottom: 15px;
+    }
+
+    table.workflow-optimization-phases ul {
+        margin-top: 10px;
+        padding-inline-start: 10px;
+    }
+}
+

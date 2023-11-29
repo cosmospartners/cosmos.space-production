@@ -1,0 +1,129 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.25rem; /* 20pt / 16px; */
+    font-weight: normal;
+}
+
+h1.title {
+    font-size: 1.625rem; /* 26pt / 16px; */
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h1.subtitle {
+    font-size: 0.9375rem; /* 15pt / 16px; */
+    color: #666666;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.0rem; /* 16pt / 16px; */
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 0.875rem; /* 14pt / 16px; */
+    color: #333333;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 0.75rem; /* 12pt / 16px; */
+    color: #666666;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.0rem;
+}
+
+p, ul, th, td, pre {
+    font-size: 0.723rem;
+    line-height: 0.89rem;
+}
+
+pre {
+    background-color: #ddd;
+    padding: 15px 0px 15px 15px;
+    overflow: scroll;
+}
+
+ul {
+    margin-top: 0rem;
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo img {
+    width: 112px;
+    height: auto;
+}
+
+header nav {
+    font-family: 'Courier New', monospace;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 16px;
+    padding: 0;
+}
+
+header nav li:not(:last-child)::after {
+    content: " • ";
+    margin-right: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 24px 24px;
+    }
+
+    header nav ul {
+        list-style: disc;
+        display: block;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    header nav li:not(:last-child)::after {
+        content: none;
+        margin-right: 0px;
+    }
+}

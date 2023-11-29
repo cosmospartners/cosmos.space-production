@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Cosmos | Language and Method</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+
+<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/content.css">
+
+
+
+
+</head>
+<body>
+  <header>
+    
+
+
+<div class="logo">
+    
+        <img src="/logo-with-type-black.png" width="844" height="618">
+    
+</div>
+
+    <nav>
+        <ul>
+            
+                <li><a href="/">Cosmos</a></li>
+            
+            
+            
+            
+                
+                    
+                        <li><a href="/values/">Values</a></li>
+                    
+                
+            
+                
+                    
+                        <li>Language and Method</li>
+                    
+                
+            
+                
+                    
+                        <li><a href="/work/">Work</a></li>
+                    
+                
+            
+                
+                    
+                        <li><a href="/contact/">Contact</a></li>
+                    
+                
+            
+        </ul>
+    </nav>
+
+
+  </header>
+  <main>
+    
+    <div class="background">
+        <div class="document">
+            <h1 class="title">Language and Method</h1>
+            <h1 class="subtitle">Overview</h1>
+            <h1 id="background">Background</h1>
+<p>The most novel outputs that Cosmos produced are a language to facilitate collaboration and an abstract method for solving problems. The <a href="#method">Method</a> and <a href="#language">Language</a> are tools that emerged organically as Cosmos developed — they were born out of the necessity to operate and scale a technical services business. They were nurtured by a discipline in engineering, a passion for designing systems, and a curiosity to understand the world around us.</p>
+<p>The Language and Method have both had a significant impact on the people that were exposed to them. Former Cosmonauts report that the tools have changed the way they think about work and organization — the Language and Method have permeated their thinking and they continue to apply them in both their personal and professional lives. We incubated several companies and taught the Language and Method to the initial staff. Years later, the companies continue to apply these principles while evolving them to suit their needs.</p>
+<p>These tools are powerful because they are precise, they are portable, and they are extendable. A team that has a shared understanding of the Language and Method can easily collaborate because their understanding of work can be unambiguously communicated, and this communication can take place over many mediums like voice, documents, and through project management tools. Furthermore, the Language and Method can easily adapt to a team&rsquo;s domain-specific needs by incorporating new terms and concepts.</p>
+<p>In the sections below you can learn more about the Language and the Method. It is documented here in a static form, but it comes alive when it&rsquo;s wielded by a team of people who believe in its value. We are immensely proud of this work!</p>
+<h1 id="language">Language</h1>
+<p>As a remote-first company operating across multiple time zones, Cosmos needed a way to facilitate collaboration both synchronously (working together on a call) and asynchronously (working independently and sharing work with others). We considered using project management tools to organize our work, but felt that they lacked expressiveness and—crucially—the ability for real-time collaboration. So, we chose to collaborate using Google Docs.</p>
+<p>We created a Google Doc for every single call within Cosmos, giving us a shared place to collaborate in real time. When we performed asynchronous work we also created a Google Doc, then shared that work with collaborators. As time went on a language began to take shape within our documents. Instead of being formless walls of text we saw that structures and formats emerged, as well as conventions for expressing content.</p>
+<p>Due to our backgrounds in computer science and software engineering, we care deeply about things like naming, clearly defining the organization and responsibility of functionality, and refactoring systems to meet evolving needs. So the language may have emerged organically, but we refined it with a great deal of intention.</p>
+<p>This led to a dynamic, shared, and ever-evolving language that enabled us to collaborate with very little friction. When working asynchronously Cosmonauts could expect to receive a document with familiar formatting and clear expectations for how they could contribute. Similarly, reviews were expressed in a way that was familiar to colleagues. It was supercharged when working synchronously—we had teams of people working in the same document at the same time, forming ideas, integrating thoughts, transforming them into new ideas, and accomplishing our shared goals.</p>
+<p>The language is what tied us together as a team. We all read, wrote and spoke it. But most importantly, we were all invested in its continued evolution and improvement.</p>
+<h2 id="definitions">Definitions</h2>
+<p>The following terms define the core of the language:</p>
+<h3 id="resource">Resource</h3>
+<p>Something that exists and that a System can interact with.</p>
+<h3 id="system">System</h3>
+<p>A Resource that is a Collection of Related Resources. A Resource can exist in multiple Systems simultaneously.</p>
+<h3 id="environment">Environment</h3>
+<p>A useful term for the System that encompasses the Resources under consideration.</p>
+<ul>
+<li>Example | A Kitchen is an Environment in which Actions like Cook Dinner and Wash Dishes are performed, but it can also be considered as a Room within the House, and in that sense it&rsquo;s considered as a System</li>
+<li>Example | A Refrigerator is an Environment in which Resources like Food, and Water are stored. But it is also a Resource of the Cooking system, and a Resource within the Kitchen&rsquo;s Environment.</li>
+</ul>
+<h3 id="actor">Actor</h3>
+<p>A Resource that performs Actions.</p>
+<h3 id="action">Action</h3>
+<p>The type of Interaction</p>
+<h3 id="interaction">Interaction</h3>
+<p>An Action performed by an Actor that produces a Collection of Effects.</p>
+<h4 id="states-of-interactions">States of Interactions</h4>
+<p>Interactions can exist in the following states. The state can be concisely expressed using the relevant emoji.</p>
+<ul>
+<li>➡️ <strong>Not Started</strong> — The work has not been started.</li>
+<li>🔄 <strong>Started</strong> — The work has been started.</li>
+<li>⏸️ <strong>Paused</strong> — The work has been stopped but is expected to resume.</li>
+<li>✅ <strong>Completed</strong> — The work has been completed and is not expected to be resumed.</li>
+<li>❌ <strong>Discarded</strong> — The work is not completed, has been stopped, and is not expected to be resumed.</li>
+</ul>
+<p>If an interaction is written with an emoji prefix then it is implicitly assumed to be in the Completed state.</p>
+<h3 id="effect">Effect</h3>
+<p>A change to a Resource.</p>
+<h2 id="usage">Usage</h2>
+<p>Cosmos did a lot of work on certification systems, so we&rsquo;ll use one as an example to demonstrate these concepts. Imagine that you own a bicycle, but it hasn&rsquo;t been used in a few years so you&rsquo;re not sure if it&rsquo;s safe to ride. You want to get confidence that it is safe, so you&rsquo;ll get the bicycle&rsquo;s safety certified by an expert bicycle mechanic.</p>
+<p>It all starts with you, an <strong>Actor</strong>, deciding to perform an <strong>Action</strong>. You, the bicycle owner, want to determine that the bicycle is safe to ride. We write this as follows:</p>
+<pre tabindex="0"><code>Bicycle Owner: Determine that Bicycle is Safe to Ride
+
+└───Actor───┘  └───────────Action───────────────────┘
+</code></pre><p>You take your bicycle to a bicycle shop to contact their services. Specifically:</p>
+<pre tabindex="0"><code>Bicycle Mechanic: Certify Safety of Bicycle
+</code></pre><p>The Bicycle Mechanic will start by asking you questions about how you&rsquo;ll use the bicycle. Will you be riding on paved roads, gravel roads, in the mountains, or some combination? Will you be carrying loads, like groceries or children? Will you be riding at night? These questions help define the <strong>Environment</strong> that you&rsquo;ll be using the bicycle within.</p>
+<p>Using a bicycle in the mountains is a very different <strong>Environment</strong> from using it in the city to go grocery shopping. In the context of the Cosmos Language, we&rsquo;re looking at two different <strong>Systems</strong> in which the bicycle is used. Here are some examples to show the different <strong>Actions</strong> in each:</p>
+<pre tabindex="0"><code>⛰️ Mountain Bicycling
+
+   - Navigate Banked Turn
+   - Jump over Log
+   - Mount Bicycle to Car
+
+
+🏘️ City Bicycling
+
+   - Navigate Turn across Traffic
+   - Brake for Stop Sign
+   - Lock Bicycle on Rack
+</code></pre><p>A <strong>System</strong> is something that organizes a bunch of related concepts. As seen in the mountain versus city example, those concepts can be <strong>Actions</strong>. But they can also be things like the pedals, the brakes, the wheels, or the handlebars. The general term that we use for any thing or concept is <strong>Resource</strong>. A bicycle is a <strong>Resource</strong>, and so are its wheels, its tires, and everything else on it. And, so are the <strong>Actions</strong> associated with it.</p>
+<p>The difference between an <strong>Environment</strong> and a <strong>System</strong> is just one of perspective. When you&rsquo;re thinking about the different ways in which you can use your bike, you&rsquo;re thinking about <strong>Systems</strong> like Mountain Bicycling and City Bicycling. Then, when you move your perspective into the City Bicycling System, you now find yourself within that <strong>Environment</strong>. In the context of City Bicycling, you&rsquo;re considering things like cars, stop signs, and bike lanes. In a sense, you&rsquo;re inside the <strong>System</strong>.</p>
+<p>But let&rsquo;s get back to the Bicycle Mechanic and finish this safety certification. They take a look at each <strong>System</strong> in the bicycle and evaluate it for its safety—the Braking System, the Suspension System, the Cargo System. Again, these are just organizations of related concepts. The Braking System includes the brake levers, the cables, and the calipers that rub against the wheel to create the stopping friction. And it&rsquo;s <strong>Systems</strong> all the way down—they&rsquo;ll look at the Cable System to ensure they&rsquo;re correctly installed, free of wear, and properly calibrated.</p>
+<p>After their inspection, the Bicycle Mechanic comes to a series of conclusions about the safety of the bicycle. Thus, an <strong>Interaction</strong> has occurred—the mechanic has finished performing the <strong>Action</strong> of <em>Certify Safety of Bicycle</em> and has produced a collection of <strong>Effects</strong> based on what they&rsquo;ve found. Whereas the <strong>Action</strong> is abstract (the mechanic could certify the safety of many bicycles in a day), the <strong>Interaction</strong> is very specific (it&rsquo;s about the mechanic certifying the safety of your bicycle). The <strong>Effects</strong> of the <strong>Interaction</strong> are specific to the Interaction. Here&rsquo;s the outcome for this case:</p>
+<pre tabindex="0"><code>Bicycle Mechanic: Certify Safety of Bicycle
+
+   - Effect | The bicycle is safe to ride in the city
+   - Effect | The bicycle is not safe to ride in the mountains
+</code></pre><p>To further illustrate <strong>Interactions</strong> and <strong>Effects</strong>, let&rsquo;s imagine you contract the mechanic to make it suitable for the mountains:</p>
+<pre tabindex="0"><code>Bicycle Mechanic: Configure Bicycle for Mountain Bicycling
+
+   - Effect | The brakes are capable of stopping the bicycle on steep descents
+   - Effect | The suspension can handle short drops
+   - Effect | The handlebars enable precise maneuverability
+</code></pre><p>These concepts of <strong>Resource</strong>, <strong>System</strong>, <strong>Environment</strong>, <strong>Actor</strong>, <strong>Action</strong>, <strong>Interaction</strong>, and <strong>Effect</strong> can be used to describe anything. We have found them to be a powerful tool for designing and defining systems that we use in our personal and professional lives. We hope that they&rsquo;ll be useful for you as well!</p>
+<h1 id="method">Method</h1>
+<p>Cosmos&rsquo;s primary business was to integrate into companies, perform research to understand how they operate and what problems they&rsquo;re experiencing, then design, develop, and deliver software that enabled them to achieve their goals. Being software engineers, we were very thoughtful and intentional about precisely how we performed this work.</p>
+<p>As Cosmos matured, various activities forced the evolution and refinement of our method. One example is performance reviews—when reviewing the performance of the first staff member in a particular role (e.g. Product Manager), we broke down the role into its component workflows and gave feedback and growth suggestions for each. This gave us an immensely valuable structure for considering the work we performed.</p>
+<p>Over time, abstract workflows emerged for solving problems and performing work. One was the <em>Plan and Execute</em> workflow, which considered work in the highest-level categories of either planning our next steps or executing those next steps. Another was <em>Research, Define, Design, Develop, Deliver, Measure</em>, which was more focused on understanding problems and then integrating solutions to solve them.</p>
+<p>In short, the Cosmos Method encompasses a variety of abstract and concrete workflows to perform work and solve problems. And it is imbued with the  philosophy of always seeking to improve and refine the processes we use to do work.</p>
+<h2 id="definitions-1">Definitions</h2>
+<p>Cosmos used <em>many</em> terms in its everyday usage of the Method. These terms don&rsquo;t (yet) include definitions, so we recommend you read the <a href="#usage-1">usage</a> section to reach a better understanding of how these terms are used in practice.</p>
+<p>We organized these terms into 6 categories:</p>
+<ul>
+<li><strong><a href="#planning">Planning</a></strong> — Systems for agreeing on a scope&rsquo;s goals, defining work to achieve those goals, and managing the performance of that work over time.</li>
+<li><strong><a href="#discussion">Discussion</a></strong> — Systems that facilitate the exchange of information between actors.</li>
+<li><strong><a href="#decision-making">Decision Making</a></strong> — Systems for agreeing upon a course of action.</li>
+<li><strong><a href="#work">Work</a></strong> — Systems that enable actors to perform activities and organize the resources related to activities.</li>
+<li><strong><a href="#collaboration">Collaboration</a></strong> — Systems that improve the working relationships between actors while prioritizing the growth and well-being of those actors.</li>
+<li><strong><a href="#general">General</a></strong> — A collection of abstract concepts that can be used throughout the Method.</li>
+</ul>
+<h3 id="planning">Planning</h3>
+<p>Terms:</p>
+<ul>
+<li>Plan</li>
+<li>Goal</li>
+<li>Next Steps</li>
+<li>Roadmap</li>
+<li>Work Horizon</li>
+<li>Priorities</li>
+<li>Timeline</li>
+</ul>
+<h3 id="discussion">Discussion</h3>
+<p>Terms:</p>
+<ul>
+<li>Subject</li>
+<li>Topic</li>
+<li>Highlight</li>
+</ul>
+<p>We defined the following <strong>Work Types</strong> within this category:</p>
+<ul>
+<li>Discussion</li>
+<li>Call</li>
+<li>Meeting</li>
+<li>Interview</li>
+<li>Communication</li>
+<li>Correspondence</li>
+<li>Debrief</li>
+<li>Session</li>
+</ul>
+<h3 id="decision-making">Decision Making</h3>
+<p>Terms:</p>
+<ul>
+<li>Approach</li>
+<li>Proposal</li>
+<li>Decision</li>
+<li>Tentative Decision</li>
+<li>Pro</li>
+<li>Con</li>
+</ul>
+<h3 id="work">Work</h3>
+<p>Terms:</p>
+<ul>
+<li>Request</li>
+<li>Work</li>
+<li>Scope</li>
+<li>Scope of Work</li>
+</ul>
+<p>We identifie the following <strong>Phases</strong> in this category:</p>
+<ul>
+<li>Discovery
+<ul>
+<li>Research</li>
+<li>Define</li>
+</ul>
+</li>
+<li>Development
+<ul>
+<li>Design</li>
+<li>Develop</li>
+<li>Deliver</li>
+<li>Measure</li>
+</ul>
+</li>
+</ul>
+<p>We defined the following <strong>Work Types</strong> within this category:</p>
+<ul>
+<li>Statement of Work</li>
+<li>Exploration</li>
+<li>Design</li>
+<li>Requirements</li>
+<li>Test Plan</li>
+<li>Delivery Plan</li>
+<li>Rollback Plan</li>
+<li>Incident</li>
+<li>Feature</li>
+<li>Review</li>
+<li>Synthesis</li>
+<li>Overview</li>
+<li>Invoice</li>
+</ul>
+<h3 id="collaboration">Collaboration</h3>
+<p>Terms:</p>
+<ul>
+<li>1:1</li>
+<li>Check-in</li>
+<li>Feedback</li>
+<li>Performance Review</li>
+</ul>
+<h3 id="general">General</h3>
+<p>Terms:</p>
+<ul>
+<li>Background</li>
+<li>Summary</li>
+<li>Resource</li>
+<li>Effect</li>
+<li>Example</li>
+<li>Update</li>
+<li>Question</li>
+<li>Position</li>
+<li>Observation</li>
+<li>Consideration</li>
+<li>Insight</li>
+<li>Index</li>
+<li>+1</li>
+</ul>
+<h2 id="usage-1">Usage</h2>
+<p>It helps to look at practical examples when seeking to understand these terms. To that end, we wrote out the following usages of the Method:</p>
+<ul>
+<li><strong><a href="#exploration">Exploration</a></strong></li>
+<li><strong><a href="#planning-1">Planning</a></strong></li>
+<li><strong><a href="#discovery">Discovery</a></strong></li>
+<li><strong><a href="#work-scoping">Work Scoping</a></strong></li>
+</ul>
+<h3 id="exploration">Exploration</h3>
+<p>Exploration is at the heart of the Cosmos Method because it&rsquo;s the first step you take when you need to learn more about a given subject. Not sure what work to do next? Perform an exploration to get a clear view of the state of the project and understand the different ways you can go. Not sure what choice to make across a set of actions? Perform an exploration to explore each approach and weigh them against one another.</p>
+<p>Explorations are an abstract concept that are useful at every level of work, from big picture strategy down to specific tactical choices.</p>
+<h4 id="summary">Summary</h4>
+<p>Explorations can be big or small, but regardless of size they all have attributes in common.</p>
+<p>Every exploration begins with a <strong>Background</strong> that sets the context for the content to follow. The act of writing a background is invaluable because it immerses the writer into the problem space that they&rsquo;re exploring. What&rsquo;s important to know, and why? What similar work has been done, and how is it related? How does this relate to work that can come next? Capturing these ideas in writing helps ensure that the scope of the work is understood and that the necessary information is all gathered in one place. And, a background is incredibly useful when someone else comes in to review the work (including the person who did the work coming back in the future!).</p>
+<p>The next part to define are <strong>Goals</strong>, <strong>Considerations</strong>, and <strong>Constraints</strong>. Goals are outcomes that you hope to achieve after completing the exploration. Considerations are things that are worth noting because they could affect how we think about solutions. And Constraints are like considerations but stronger — they are statements that must be satisfied.</p>
+<p>The work itself is then integrated into a <strong>Notes</strong> section, which is freeform and can contain whatever is useful for the writer. This is their scratchpad to explore ideas, record notes, and start to structure their understanding. This section often includes <strong>Approaches</strong>, each of which outlines a way to advance the work. An approach can have <strong>Pros</strong> and <strong>Cons</strong> associated with it, as well as <strong>Positions</strong> that one or more actors share.</p>
+<p>Explorations are typically completed by writing a <strong>Summary</strong> of the outcome. This is a structured section that communicates the learnings from the exploration. It should structure the content in a way that makes it easy to read and understand. Ideally, it should communicate decisions about actions, or proposals about which actions should be taken. These actions are defined as <strong>Next Steps</strong> to be taken.</p>
+<h3 id="planning-1">Planning</h3>
+<p>At the highest level, all work is done within a <em>Plan and Execute</em> cycle. You plan the work that you intend to do, then execute that work. Cosmos operated on weekly planning cycles, which means that each week we planned the work for the following week, then execute upon that plan. This process is very effective for small teams (2 to 6 people) because it provides a weekly opportunity to reflect on the current state of the project, align on clear short-term goals, then allocate work to achieve those goals.</p>
+<p>The workflow <em>Plan Scope</em> describes the work done to create a plan for a specific scope of work. It revolves around a <strong>Plan</strong>, which is a single, persistent document that serves as the center of all work done on that scope. Within a planning cycle, any actor can refer to the plan to see what their responsibilities are, as well as the responsibilities of others. It also serves as a repository for resources related to that scope like workflows, role assignments, decisions, and notable discussions.</p>
+<p>Here is the workflow to <em>Plan Scope</em>:</p>
+<h4 id="step--prepare-plan">Step | Prepare Plan</h4>
+<p>The manager of the scope works independently to prepare the plan document for review. Their goal is to get the plan to a state where the team can come in, review it, and agree on the next week&rsquo;s plan. This is accomplished through the following steps:</p>
+<ul>
+<li>Step | Summarize State of Scope
+<ul>
+<li>This is effectively a <strong>Background</strong> about the scope. It communicates its current state, things that can or will affect it, and anything else that is notable. This section is critical for ensuring that you know where you are now so that you can plot a realistic path about where to go next.</li>
+</ul>
+</li>
+<li>Step | Set Goals
+<ul>
+<li>The intention is to achieve each <strong>Goal</strong> prior to the next plan. In other words, the goals describe the planned future state of the project by the time the next plan is being prepared.</li>
+</ul>
+</li>
+<li>Step | Create Topics and Highlights
+<ul>
+<li>During the planning session the team will discuss <strong>Topics</strong> and <strong>Highlights</strong> as a group. Highlights are used to communicate information that does not necessarily require discussion, like to note an accomplishment, upcoming deadline, or consideration. Topics are used to prompt discussion about actions to take. They are written in a highly actionable form so that the team&rsquo;s time together is used efficiently. They are often in the form of <strong>Proposals</strong> that propose an action, <strong>Questions</strong> that seek information or guidance, or <strong>Requests</strong> that prompt specific action.</li>
+</ul>
+</li>
+<li>Step | Draft Priorities
+<ul>
+<li>A goal of planning is to allocate discrete work to team members that they should achieve before the next planning session. When planning a scope, the manager typically doesn&rsquo;t have all the required information to decide what all that work is — they often need insight from the team about how long certain tasks will take, or they might not have technical knowledge about what work should be done when. So, they create draft <strong>Priorities</strong> that reflect their understanding. These priorities are specific tasks that work toward the stated goals.</li>
+</ul>
+</li>
+</ul>
+<h4 id="step--review-plan">Step | Review Plan</h4>
+<p>The next step is for the team to review the plan. Team members read through the plan and integrate thoughts as they go. They might integrate a <strong>Question</strong> about a <strong>Proposal</strong> that they don&rsquo;t understand, or might even add an alternative <strong>Approach</strong> that could be considered instead. They might integrate a <strong>Position</strong> to state their view about a topic, or a <strong>+1</strong> to indicate that they share a stated position. They also might integrate a +1 to show their support for an approach.</p>
+<p>After this asynchronous review is complete the team comes together to do the following:</p>
+<ul>
+<li>Step | Discuss Topics
+<ul>
+<li>The manager of the scope conducts the discussions to ensure that the team&rsquo;s time is being used effectively. The goal is to reach decisions and actions. Often, this can mean creating <strong>Next Steps</strong> to allocate to advance a scope because it&rsquo;s more efficient to have one or two people continue the work than to absorb the entire team&rsquo;s time.</li>
+</ul>
+</li>
+<li>Step | Prioritize Work
+<ul>
+<li>After all of the topics have been discussed, the emergent work is integrated into the draft <strong>Priorities</strong> and the team collaborates to set the overall priority of each <strong>Next Step</strong>. This priority is created without considering what work the team thinks they can achieve before the next planning session.</li>
+</ul>
+</li>
+<li>Step | Allocate Work
+<ul>
+<li>With the <strong>Priorities</strong> set, it&rsquo;s then time to allocate work to actors with the expectation that they will complete it prior to the next planning session. If an actor exhausts all of their allocated work, then they can refer to the priorities to see what to do next.</li>
+</ul>
+</li>
+</ul>
+<h4 id="step--commit-plan">Step | Commit Plan</h4>
+<p>Now that the priorities are set and work has been allocated, the plan can be finalized. This is done by integrating updates into various resources that reflect the state of the project.</p>
+<p>The <strong>Priorities</strong> clearly communicate the responsibilities of each actor during the next planning cycle, as well as the work that they can perform next in the event that they complete all of their allocated tasks.</p>
+<p>The <strong>Timeline</strong> shows work that has been allocated to a specific planning period. When looking into the past, the timeline shows the status of work—it shows the work that was actually done (including new work that emerged) as well as work that was planned but not completed. When looking at the present, the timeline shows the work in the current planning period. The timeline is typically not populated for future planning periods, but it&rsquo;s possible that it could be if there is a high degree of confidence in when work will be completed and a high degree of understanding about what work comes next.</p>
+<p>The <strong>Work Horizon</strong> is a slice of the timeline that shows the previous planning period and the current planning period. It&rsquo;s a useful tool to see the scope&rsquo;s recent history at a glance. It&rsquo;s especially useful in planning because it indicates what work was planned but not completed in the previous planning period, and how any potential emergent work could have impacted that.</p>
+<p>The <strong>Roadmap</strong> reflects a prioritized sequence of scopes that the team intends to work on over the upcoming planning cycles. It&rsquo;s very accurate in the short term (e.g. in the next planning cycle) and gets a little fuzzier in the medium and long term. The roadmap answers the question of &ldquo;What work do we plan to do next?&rdquo; across short, medium, and long-term horizons.</p>
+<h3 id="discovery">Discovery</h3>
+<p>Any work, no matter its size or shape, requires a starting point. Most of Cosmos&rsquo;s work aimed to solve business and industry problems for clients and partners. Those problems ranged from answering questions, understanding industries, reducing friction in business processes, designing new businesses, and implementing or inventing technology.</p>
+<p>The solution to any problem is a function of its problem definition. Discovery is a methodology for researching and defining problem spaces, and creating a <strong>Roadmap</strong> to solve them.</p>
+<p>Here is the workflow to <em>Perform Discovery</em>:</p>
+<h4 id="step--research">Step | Research</h4>
+<p>The first step is to understand the problem space. This means collaborating with subject matter experts to understand the areas that need exploring: industry news, publications, business processes, technology systems, and any other related resources. It also means interviewing the various actors that are involved in the problem space or have expertise on the problem spaces.</p>
+<p>The result is a <strong>Synthesis</strong> that summarizes the problem space, the central challenges, and the current state of the problem space. It describes the <strong>Actors</strong> in the space, the <strong>Roles</strong> they perform, and the <strong>Workflows</strong> executed in those performances. It also considers any other essential <strong>Resources</strong>.</p>
+<h4 id="step--identify-goals">Step | Identify Goals</h4>
+<p><strong>Goals</strong> are the measurable outcomes expected to result from a given solution. In aggregate, they measure aspects of the desired future state of the problem space after any given solution is implemented. Goals enable the exploration of <strong>Approaches</strong> to solve the problem.</p>
+<h4 id="step--scope-work">Step | Scope Work</h4>
+<p>With the current state of the problem defined (<strong>Synthesis</strong>) and the desired future state of the problem defined (<strong>Goals</strong>) all that remains is defining the work to achieve them. A <strong>Roadmap</strong> is a prioritized list of <strong>Scopes of Work</strong> that upon completion will achieve the measures defined by the goals.</p>
+<p>Roadmaps may range in their scope and level: from performing additional research to producing prototypes, and from designing and implementing new systems to executing brand new business strategies.</p>
+<h3 id="work-scoping">Work Scoping</h3>
+<p>The term &ldquo;Work&rdquo; has different meanings depending on its form of speech, like verb or noun. It its verb form it is an action to carry out, like <em>Paint Canvas</em> or <em>Shovel Driveway</em>. In its noun form it is the output of an activity, like <em>Painting</em> (&ldquo;Work of Art&rdquo;) or <em>Cleared Driveway</em>.</p>
+<p>The success and efficiency of any work is a function of how well it is scoped. Before work can begin, it must have a Scope. Scope is a description of the work in terms it can be understood and executed. <strong>Scope</strong> involves the naming of work, the hierarchy of the work, and how its related outputs and activities are encoded within it. We define <strong>Scopes of Work</strong> as work that is structured with these considerations.</p>
+<p>The efficiency and success of the execution of a <strong>Scope of Work</strong> are a function of its structure and its relationship to the <strong>Goals</strong> the work aims to achieve. Cosmos placed a great deal of effort on the structure and success Scopes of Work.</p>
+<p><strong>Goals</strong> may be implicit or explicit. For example, <em>Shovel Driveway</em> may have an implicit goal of minimizing the time spent shoveling while in pursuit of the explicit goal of creating a <em>Cleared Driveway</em>.</p>
+<p>Scoping is the process of evaluating a set of <strong>Goals</strong>, defining <strong>Actions</strong> to achieve those goals, then naming, structuring, and sequencing the actions so that they can be executed. It is an iterative process of refinement that often generates a hierarchy of actions. The depth of this hierarchy is determined by the problem space and goals of the work.</p>
+<h4 id="example-scope--assemble-desk">Example Scope | Assemble Desk</h4>
+<p>We want to assemble a desk, and in doing so we have the following <strong>Goals</strong>:</p>
+<pre tabindex="0"><code>- Goal | Desk is assembled
+- Goal | Cleanup time is minimized
+- Goal | Assembly time is minimized
+</code></pre><p>Let&rsquo;s define a scope to achieve those goals:</p>
+<pre tabindex="0"><code>- Assemble Desk
+    - Open Packaging
+    - Read Instructions
+    - Validate All Tools Exist
+        - Read Tool Requirements
+        - Locate Required Tools
+    - Validate All Parts Exist
+        - Read Parts Manifest
+        - Locate Parts in Manifest
+    - Prepare to Assemble Desk
+        - Gather Required Tools
+        - Gather Required Parts
+        - Prepare Assembly Area
+    - Assemble Desk
+        - Follow Instructions
+        - Place Packaging to Discard in Set Location
+    - Dispose of Packaging
+</code></pre><p>In this scope we have several scopes defined in pursuit of our goals. The goal of <em>Assembly time is minimized</em> is supported by the scope to <em>Validate All Parts Exist</em> and to <em>Validate All Tools Exist</em> before starting assembly. The goal of <em>Cleanup time is minimized</em> is supported by the scope to <em>Place Packaging to Discard in Set Location</em>.</p>
+<h4 id="example-scope--set-up-new-office">Example Scope | Set Up New Office</h4>
+<p>Scopes may have deeper hierarchies as the range in breadth or complexity. What if our previous example were part of a broader scope? The following scope does not included all tiers or branches in the hierarchy, but aims to show how simple scopes comprise and form them:</p>
+<pre tabindex="0"><code>- Goals
+    - There is a place to sit and work
+    - There is a place for guests to sit and visit
+    - The space feels personal
+    - The space is inspiring
+
+- Scope
+    - Create Work Area
+        - Create Desk
+            - Choose Desk
+            - Purchase Desk
+            - Assemble Desk
+        - Create Seat
+            - Choose Seat
+            - Purchase Seat
+            - Assemble Seat
+    - Put Up Wall Art
+        - Choose Art
+        - Purchase Art
+        - Install Art
+    - Set Up Guest Area
+</code></pre><p>In this broader scope, we see how the previous scope to <em>Assemble Desk</em> is just part of a broader scope to <em>Create Work Area</em>, and even then is part of a larger scope to <em>Set Up New Office</em>.</p>
+
+        </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>Copyright 2018-2023. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
+
